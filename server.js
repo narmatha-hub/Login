@@ -18,7 +18,7 @@ app.post('/login', (req, res) => {
     const { username, password } = req.body;
     
     if (username === 'narmatha' && password === '1234') {
-        res.sendFile(path.join(__dirname, 'dashboard.html'));
+        res.sendFile(path.join(__dirname, 'home.html'));
     } else {
         res.send('Invalid username or password.');
     }
