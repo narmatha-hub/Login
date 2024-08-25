@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const messageElement = document.getElementById('message');
     
     if (username === 'narmatha' && password === '1234') {
-        window.location.href = 'dashboard.html';
+        window.location.href ='dashboard.html';
     } else {
         messageElement.textContent = 'Invalid username or password.';
     }
