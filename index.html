@@ -6,14 +6,12 @@
     <title>Login Form</title>
     <style>
         body {
-            
             background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-           
         }
         .login-container {
             background: white;
@@ -23,9 +21,7 @@
             width: 350px;
             text-align: center;
             border: 2px solid #007bff;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
-  
-            
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
         h2 {
             margin-bottom: 20px;
@@ -68,12 +64,16 @@
         button:hover {
             background-color: #0056b3;
         }
+        #message {
+            color: red;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="dashboard.html" method="POST">
+        <form id="loginForm">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             
@@ -82,8 +82,8 @@
             
             <button type="submit">Login</button>
         </form>
+        <p id="message"></p>
     </div>
     <script src="server.js"></script>
 </body>
 </html>
-
